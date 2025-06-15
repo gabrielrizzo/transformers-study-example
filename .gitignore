@@ -1,0 +1,4 @@
+.venv
+.env
+.env.*
+.my_sentiment_model
