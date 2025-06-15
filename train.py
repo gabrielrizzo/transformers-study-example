@@ -92,9 +92,6 @@ def predict_sentiment(text):
     outputs = model(**inputs)
     probabilities = torch.nn.functional.softmax(outputs.logits, dim=-1)
     predicted_label = torch.argmax(probabilities, dim=-1).item()
-    # explainer = model_evaluation.Explainer(model=model)
-    # shap_values = explainer(inputs)
-    # print(shap_values)
     return predicted_label, probabilities
 
 # Test with some examples

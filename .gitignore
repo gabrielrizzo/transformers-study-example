@@ -1,4 +1,5 @@
-.venv
-.env
-.env.*
-.my_sentiment_model
+venv
+env
+env.*
+my_sentiment_model
+results
